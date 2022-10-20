@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+    <Button onclick="cek()" class="btn btn-outline-warning"> Listele </Button>
+</div>
+<style>
+    td {
+        font-weight: 800;
+    }
+</style>
+
+<body style="background-color: rgb(75, 57, 156);">
+    <div style="display: flex; justify-content: center; padding-top: 20px; padding-bottom: 20px;">
+        <form>
+            <input name="gorev">
+            <input name="gtanim">
+            <input type="submit" onclick="gonder()">
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr style="background-color: rgb(95, 96, 204);">
+                <th scope="col">#</th>
+                <th scope="col">Görev</th>
+                <th scope="col">Görev Tanımı </th>
+
+
+            </tr>
+        </thead>
+        <tbody id="data">
+
+
+        </tbody>
+    </table>
+
+    <script src="reaTask.js"></script>
+</body>
+
+</html>
